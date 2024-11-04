@@ -1,13 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./User.css";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faTrash, faUser } from "@fortawesome/free-solid-svg-icons";
 
-export default function User({ element }) {
+export default function User({ element,children }) {
     return (
         <div className="card-user">
             <div className="content">
                 <FontAwesomeIcon icon={faUser} className="icon"/>
-                {element.firstName} {element.lastName}
+                <span>{element.firstName} {element.lastName}</span>
+                {children}
             </div>
         </div>
     )

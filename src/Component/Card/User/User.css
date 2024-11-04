@@ -8,6 +8,7 @@
     color: white;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .card-user .icon{
@@ -17,4 +18,11 @@
 .card-user .content{
     display: flex;
     flex-direction: column;
+}
+
+.card-user .delete{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
 }

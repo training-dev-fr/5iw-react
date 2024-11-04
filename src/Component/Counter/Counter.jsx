@@ -1,9 +1,10 @@
-import { decrement, increment } from "../../store/actions";
+
+import { decrement, increment } from "../../store/reducers";
 import "./Counter.css";
 import { useSelector, useDispatch } from 'react-redux';
 
 export default function Counter() {
-    const count = useSelector(state => state.count);
+    const count = useSelector(state => state.value);
     const dispatch = useDispatch();
     return (
         <div>

@@ -1,0 +1,8 @@
+.user-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 20px;
+}

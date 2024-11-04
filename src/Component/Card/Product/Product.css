@@ -1,0 +1,21 @@
+.card-product{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 150px;
+    background-color: #1565c0;
+    border-radius: 8px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-product .icon{
+    font-size: 34px;
+}
+
+.card-product .content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

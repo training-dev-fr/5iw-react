@@ -1,13 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Userlist from './Component/UserList/UserList'
+ import './App.css'
+import List from './Component/List/List'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
     <>
-     <Userlist />
+     <BrowserRouter>
+      <Routes>
+        <Route path="/user" element={<List type="user" />} /> 
+        <Route path="/product" element={<List type="product" />} /> 
+      </Routes>
+     </BrowserRouter>
     </>
   )
 }
